@@ -41,7 +41,10 @@ def state_recv():
         except Exception:
             print ('\nState Exit . . .\n')
             break
-
+# idea is to input "frame" into network and after processing in cnn to an "edge dected" 
+# image (hopefully with borders colored in) use opencv to draw my rectangle, 
+# then assess how far drone position "p" is from left and right borders which will 
+# be used in calculation of degree turn ccw or cw
 def vid_recv():
     tello_video = cv.VideoCapture("udp://@0.0.0.0:11111")
     print('tello video connect')
