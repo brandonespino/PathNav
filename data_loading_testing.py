@@ -4,8 +4,7 @@ import numpy as np
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
-#import matplotlib.pyplot as plt
-
+# import matplotlib.pyplot as plt
 
 class pathDataset(Dataset):
     def __init__(self, imgs_dir, transform):
@@ -31,7 +30,8 @@ train_loader = DataLoader(dataset, batch_size=2, shuffle=True)
 
 for idx, images in enumerate(train_loader): # images is tensor 32, 3, 720, 1280
     print(images.shape)
-    #plt.imshow(images[0].permute(1, 2, 0))
+    # plt.imshow(images[0].permute(1, 2, 0))
+    print('image showing?')
     break
 
 test_img = torch.rand(3, 144, 256)
