@@ -1,7 +1,7 @@
 import cv2 as cv
 
 capture = cv.VideoCapture('TelloVideo/afternoon.mp4')
-frames_to_skip = None # number of frames to skip between saves
+frames_to_skip = 0 # number of frames to skip between saves
 frame_num = 0
 file_name_num = 0
 while(True):
